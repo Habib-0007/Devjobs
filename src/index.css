@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans");
+
+* {
+  font-family: var(--font-family);
+}
+
+:root {
+  /* Font Family */
+  --font-family: "Kumbh Sans", sans-serif;
+
+  /* Font sizes */
+  --font-body: 1rem;
+  --font-h1: 1.75rem;
+  --font-h2: 1.5rem;
+  --font-h3: 1.25rem;
+  --font-h4: 0.875rem;
+
+  /* Line heights */
+  --line-height-body: 1.625rem;
+  --line-height-h1: 2.125rem;
+  --line-height-h2: 1.813rem;
+  --line-height-h3: 1.5rem;
+  --line-height-h4: 1.125rem;
+
+  /* Basic spacing */
+  --spacing-xs: 1rem;
+  --spacing-sm: 1.875rem;
+  --spacing-md: 2.45rem;
+  --spacing-lg: 3.125rem;
+  --spacing-xl: 3.75rem;
+  --spacing-2xl: 4.375rem;
+
+  /* Screen sizes */
+  --screen-xs: 300px;
+  --screen-sm: 576px;
+  --screen-md: 768px;
+  --screen-lg: 992px;
+  --screen-xl: 1200px;
+}
+
+.theme-light {
+  --primary: #5964e0;
+  --primary-accent: #939bf4;
+  --main-text: #19202d;
+  --faded-text: #6e8098;
+  --light-text: #8c8f96;
+  --accent-text: #5964e0;
+  --dark-background: #f4f6f8;
+  --light-background: #ffffff;
+  --button-background: #5964e0;
+  --button-hover: #939bf4;
+  --light-button-text: #ffffff;
+  --secondary-button-background: #eef0fc;
+  --secondary-button-hover: #c5c9f4;
+  --checkmark-background: #e7e8e9;
+  --checkmark-background-hover: #d5d8f7;
+  --tertiary: #9daec2;
+  --tertiary-accent: #6e8098;
+  --danger: #ff293b;
+  --danger-hover: #ff6976;
+  --success: #258c53;
+  --success-hover: #7cba98;
+}
+
+.theme-dark {
+  --primary: #5964e0;
+  --primary-accent: #939bf4;
+  --main-text: #ffffff;
+  --faded-text: #6e8098;
+  --light-text: #ffffff;
+  --accent-text: #5964e0;
+  --dark-background: #121721;
+  --light-background: #19202d;
+  --button-background: #5964e0;
+  --button-hover: #939bf4;
+  --light-button-text: #ffffff;
+  --secondary-button-background: #303642;
+  --secondary-button-hover: #696e76;
+  --checkmark-background: #313743;
+  --checkmark-background-hover: #3d4453;
+  --tertiary: #9daec2;
+  --tertiary-accent: #6e8098;
+  --danger: #ff293b;
+  --danger-hover: #ff6976;
+  --success: #258c53;
+  --success-hover: #7cba98;
+}
