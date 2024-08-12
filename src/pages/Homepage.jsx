@@ -4,6 +4,7 @@ import fetchJobs from "../components/fetchJobs";
 
 const Homepage = () => {
   const { data, loading, error } = fetchJobs("data.json");
+  console.log(data)
   return (
     <section className="home">
       {loading && <div>loading...</div>}
