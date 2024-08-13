@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 const JobDetail = () => {
   const { data, loading, error } = fetchJobs("/data.json");
   const { id } = useParams();
-  const [detail, setDetail] = useState(null);
+  const [detail, setDetail] = useState([]);
 
   useEffect(() => {
     data && setDetail(data.find((item) => item.id == id));
