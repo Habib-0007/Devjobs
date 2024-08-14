@@ -204,6 +204,16 @@ header > section {
   grid-template-columns: repeat(12, 1fr);
 }
 
+.details_box {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .details_head {
   display: flex;
   justify-content: center;
@@ -213,12 +223,11 @@ header > section {
   text-align: center;
   background-color: var(--light-background);
   padding: 40px 50px;
-  grid-column-start: 1;
-  grid-column-end: 13;
   margin-inline: 20px;
   position: relative;
   top: -30px;
   z-index: 999;
+  width: 100%;
 }
 
 .details_head div:first-child {
@@ -267,6 +276,37 @@ header > section {
   background-color: var(--secondary-button-hover);
 }
 
+.details_body {
+  width: 100%;
+}
+
+.details_body_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+}
+
+.details_body_top > div {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.details_body_top > button {
+  display: block;
+  padding: 12px 28px;
+  background-color: var(--button-background);
+  color: var(--light-button-text);
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 6px;
+}
+
 @media screen and (min-width: 768px) {
   header {
     border-bottom-left-radius: 100px;
@@ -284,13 +324,16 @@ header > section {
     grid-template-columns: 1fr 1fr;
   }
 
+  .details_box {
+    grid-column-start: 2;
+    grid-column-end: 12;
+  }
+
   .details_head {
     justify-content: space-between;
     align-items: center;
     padding: 0px;
     flex-direction: row;
-    grid-column-start: 2;
-    grid-column-end: 12;
     border-radius: 10px;
   }
 
@@ -320,7 +363,7 @@ header > section {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .details_head {
+  .details_box {
     grid-column-start: 3;
     grid-column-end: 11;
   }
